@@ -1,4 +1,4 @@
-# Vue + Custom Component Bootstrap Example
+# Vue + Custom Component Bootstrap Starter Template Example
 
 <i>This project structure is developed from on Evan You's <a href="https://github.com/vuejs/vue-component-example" target="_blank">code</a></i>
 
