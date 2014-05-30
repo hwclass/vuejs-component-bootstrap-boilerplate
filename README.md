@@ -1,5 +1,7 @@
 # Vue + Custom Component Bootstrap Example
 
+<i>This project structure is developed from on Evan You's <a href="https://github.com/vuejs/vue-component-example" target="_blank">code</a></i>
+
 A simple setup using [Gulp](http://gulpjs.com), [Component](http://github.com/component/component) together with [Vue.js](http://vuejs.org) for modular UI development.
 
 Since Vue.js is itself built with Component, this is the recommended way of using Vue.js for larger scale applications. To make things more test friendly, the directives, filters and components simply export functions and definition objects without requiring Vue.js itself.
