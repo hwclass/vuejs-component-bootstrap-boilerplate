@@ -1,4 +1,4 @@
-# Vue + Component Example
+# Vue + Custom Component Bootstrap Example
 
 A simple setup using [Gulp](http://gulpjs.com), [Component](http://github.com/component/component) together with [Vue.js](http://vuejs.org) for modular UI development.
 
