@@ -1,0 +1,7 @@
+{
+  "name": "vue-component-example",
+  "devDependencies": {
+    "gulp-component": "~0.1.4",
+    "gulp": "~3.5.2"
+  }
+}
