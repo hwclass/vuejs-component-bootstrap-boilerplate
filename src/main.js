@@ -44,10 +44,18 @@ new Vue({
         footer : require('footer')
     },
 
+    methods : {},
+
     data: {
         projectTitle: 'The Project',
-        value: 'this should be reversed and flipped',
-        bgColor: '#f3f3f3',
-        navbarContent : 'Hello, this is a default navbar content...'
+        menuItems : [
+        	{text : 'Home', link : '#home', className : 'active'},
+        	{text : 'About', link : '#about', className : ''},
+        	{text : 'Contact', link : '#contact', className : ''}
+        ],
+        containerContent : {
+        	h1 : 'Bootstrap starter template',
+        	p : 'Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.'
+        }
     }
 });

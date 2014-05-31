@@ -4651,14 +4651,14 @@ module.exports = {
 });
 require.register("main/index.js", function(exports, require, module){
 module.exports = {
-    className: 'container',
-    template: require('./template.html')
+  className: 'container',
+  template: require('./template.html')
 }
 });
 require.register("footer/index.js", function(exports, require, module){
 module.exports = {
-    className: 'footer',
-    template: require('./template.html')
+  className: 'footer',
+  template: require('./template.html')
 }
 });
 require.register("vue-component-example/src/config.js", function(exports, require, module){
@@ -4735,11 +4735,19 @@ new Vue({
         footer : require('footer')
     },
 
+    methods : {},
+
     data: {
-        msg: 'hello',
-        value: 'this should be reversed and flipped',
-        bgColor: '#f3f3f3',
-        navbarContent : 'Hello, this is a default navbar content...'
+        projectTitle: 'The Project',
+        menuItems : [
+        	{text : 'Home', link : '#home', className : 'active'},
+        	{text : 'About', link : '#about', className : ''},
+        	{text : 'Contact', link : '#contact', className : ''}
+        ],
+        containerContent : {
+        	h1 : 'Bootstrap starter template',
+        	p : 'Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.'
+        }
     }
 });
 });
@@ -4761,10 +4769,10 @@ module.exports = function (value) {
 
 
 require.register("navbar/template.html", function(exports, require, module){
-module.exports = '<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">\n  <div class="container">\n    <div class="navbar-header">\n      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">\n        <span class="sr-only">Toggle navigation</span>\n        <span class="icon-bar"></span>\n        <span class="icon-bar"></span>\n        <span class="icon-bar"></span>\n      </button>\n      <a class="navbar-brand" href="#">Project name</a>\n    </div>\n    <div class="collapse navbar-collapse">\n      <ul class="nav navbar-nav">\n        <li class="active"><a href="#">Home</a></li>\n        <li><a href="#about">About</a></li>\n        <li><a href="#contact">Contact</a></li>\n      </ul>\n    </div><!--/.nav-collapse -->\n  </div>\n</div>';
+module.exports = '<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">\n  <div class="container">\n    <div class="navbar-header">\n      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">\n        <span class="sr-only">Toggle navigation</span>\n        <span class="icon-bar"></span>\n        <span class="icon-bar"></span>\n        <span class="icon-bar"></span>\n      </button>\n      <a class="navbar-brand" href="#">{{projectTitle}}</a>\n    </div>\n    <div class="collapse navbar-collapse">\n      <ul class="nav navbar-nav">\n        <li app-repeat=\'item : menuItems\' class="{{item.className}}">\n          <a href="{{item.link}}">\n            {{item.text}}\n          </a>\n        </li>\n      </ul>\n    </div><!--/.nav-collapse -->\n  </div>\n</div>';
 });
 require.register("main/template.html", function(exports, require, module){
-module.exports = '<div class="container">\n  <div class="starter-template">\n    <h1>Bootstrap starter template</h1>\n    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n  </div>\n</div>';
+module.exports = '<div class="container">\n  <div class="starter-template">\n    <h1>{{containerContent.h1}}</h1>\n    <p class="lead">{{containerContent.p}}</p>\n  </div>\n</div>';
 });
 require.register("footer/template.html", function(exports, require, module){
 module.exports = '<div class="footer">\n  <div class="container">\n    <p class="text-muted">Place sticky footer content here.</p>\n  </div>\n</div>';

@@ -1,4 +1,4 @@
 module.exports = {
-    className: 'container',
-    template: require('./template.html')
+  className: 'container',
+  template: require('./template.html')
 }
