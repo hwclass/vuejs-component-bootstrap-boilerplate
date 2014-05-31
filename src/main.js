@@ -45,7 +45,7 @@ new Vue({
     },
 
     data: {
-        msg: 'hello',
+        projectTitle: 'The Project',
         value: 'this should be reversed and flipped',
         bgColor: '#f3f3f3',
         navbarContent : 'Hello, this is a default navbar content...'
