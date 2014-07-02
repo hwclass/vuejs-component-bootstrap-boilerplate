@@ -4747,7 +4747,8 @@ new Vue({
         containerContent : {
         	h1 : 'Bootstrap starter template',
         	p : 'Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.'
-        }
+        },
+        currentView : 'main'
     }
 });
 });

@@ -7,7 +7,9 @@
 	</head>
 	<body>
 		<div app-component="navbar"></div>
-		<div app-component="main"></div>
+		<div app-component="main">
+			<div v-view="{{currentView}}"></div>
+		</div>
 		<div app-component="footer"></div>
 		<script src="build/build.js"></script>
 	</body>
