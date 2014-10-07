@@ -1,5 +1,5 @@
 {
-  "name": "vue-component-example",
+  "name": "vue-custom-component-bootstrap",
   "main": "src/main.js",
   "scripts": [
     "src/config.js",
