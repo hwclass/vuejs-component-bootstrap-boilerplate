@@ -1,5 +1,5 @@
 {
-  "name": "vue-component-example",
+  "name": "vue-custom-component-bootstrap",
   "devDependencies": {
     "gulp-component": "~0.1.4",
     "gulp": "~3.8.5"
