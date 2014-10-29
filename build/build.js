@@ -4661,7 +4661,7 @@ module.exports = {
   template: require('./template.html')
 }
 });
-require.register("vue-component-example/src/config.js", function(exports, require, module){
+require.register("vue-custom-component-bootstrap/src/config.js", function(exports, require, module){
 Vue.config({
 
 	// prefix for directives
@@ -4688,7 +4688,7 @@ Vue.config({
 
 });
 });
-require.register("vue-component-example/src/main.js", function(exports, require, module){
+require.register("vue-custom-component-bootstrap/src/main.js", function(exports, require, module){
 var Vue = require('vue')
 
 Vue.config({
@@ -4752,14 +4752,14 @@ new Vue({
     }
 });
 });
-require.register("vue-component-example/src/directives/flip.js", function(exports, require, module){
+require.register("vue-custom-component-bootstrap/src/directives/flip.js", function(exports, require, module){
 module.exports = function () {
     this.el.style.transform =
     this.el.style.mozTransform =
     this.el.style.webkitTransform = 'scaleX(-1)'
 }
 });
-require.register("vue-component-example/src/filters/reverse.js", function(exports, require, module){
+require.register("vue-custom-component-bootstrap/src/filters/reverse.js", function(exports, require, module){
 module.exports = function (value) {
     return value.toString().split('').reverse().join('')
 }
@@ -4778,49 +4778,49 @@ module.exports = '<div class="container">\n  <div class="starter-template">\n   
 require.register("footer/template.html", function(exports, require, module){
 module.exports = '<div class="footer">\n  <div class="container">\n    <p class="text-muted">Place sticky footer content here.</p>\n  </div>\n</div>';
 });
-require.alias("yyx990803-vue/src/main.js", "vue-component-example/deps/vue/src/main.js");
-require.alias("yyx990803-vue/src/emitter.js", "vue-component-example/deps/vue/src/emitter.js");
-require.alias("yyx990803-vue/src/config.js", "vue-component-example/deps/vue/src/config.js");
-require.alias("yyx990803-vue/src/utils.js", "vue-component-example/deps/vue/src/utils.js");
-require.alias("yyx990803-vue/src/fragment.js", "vue-component-example/deps/vue/src/fragment.js");
-require.alias("yyx990803-vue/src/compiler.js", "vue-component-example/deps/vue/src/compiler.js");
-require.alias("yyx990803-vue/src/viewmodel.js", "vue-component-example/deps/vue/src/viewmodel.js");
-require.alias("yyx990803-vue/src/binding.js", "vue-component-example/deps/vue/src/binding.js");
-require.alias("yyx990803-vue/src/observer.js", "vue-component-example/deps/vue/src/observer.js");
-require.alias("yyx990803-vue/src/directive.js", "vue-component-example/deps/vue/src/directive.js");
-require.alias("yyx990803-vue/src/exp-parser.js", "vue-component-example/deps/vue/src/exp-parser.js");
-require.alias("yyx990803-vue/src/text-parser.js", "vue-component-example/deps/vue/src/text-parser.js");
-require.alias("yyx990803-vue/src/deps-parser.js", "vue-component-example/deps/vue/src/deps-parser.js");
-require.alias("yyx990803-vue/src/filters.js", "vue-component-example/deps/vue/src/filters.js");
-require.alias("yyx990803-vue/src/transition.js", "vue-component-example/deps/vue/src/transition.js");
-require.alias("yyx990803-vue/src/batcher.js", "vue-component-example/deps/vue/src/batcher.js");
-require.alias("yyx990803-vue/src/directives/index.js", "vue-component-example/deps/vue/src/directives/index.js");
-require.alias("yyx990803-vue/src/directives/if.js", "vue-component-example/deps/vue/src/directives/if.js");
-require.alias("yyx990803-vue/src/directives/repeat.js", "vue-component-example/deps/vue/src/directives/repeat.js");
-require.alias("yyx990803-vue/src/directives/on.js", "vue-component-example/deps/vue/src/directives/on.js");
-require.alias("yyx990803-vue/src/directives/model.js", "vue-component-example/deps/vue/src/directives/model.js");
-require.alias("yyx990803-vue/src/directives/with.js", "vue-component-example/deps/vue/src/directives/with.js");
-require.alias("yyx990803-vue/src/directives/html.js", "vue-component-example/deps/vue/src/directives/html.js");
-require.alias("yyx990803-vue/src/directives/style.js", "vue-component-example/deps/vue/src/directives/style.js");
-require.alias("yyx990803-vue/src/directives/partial.js", "vue-component-example/deps/vue/src/directives/partial.js");
-require.alias("yyx990803-vue/src/directives/view.js", "vue-component-example/deps/vue/src/directives/view.js");
-require.alias("yyx990803-vue/src/main.js", "vue-component-example/deps/vue/index.js");
+require.alias("yyx990803-vue/src/main.js", "vue-custom-component-bootstrap/deps/vue/src/main.js");
+require.alias("yyx990803-vue/src/emitter.js", "vue-custom-component-bootstrap/deps/vue/src/emitter.js");
+require.alias("yyx990803-vue/src/config.js", "vue-custom-component-bootstrap/deps/vue/src/config.js");
+require.alias("yyx990803-vue/src/utils.js", "vue-custom-component-bootstrap/deps/vue/src/utils.js");
+require.alias("yyx990803-vue/src/fragment.js", "vue-custom-component-bootstrap/deps/vue/src/fragment.js");
+require.alias("yyx990803-vue/src/compiler.js", "vue-custom-component-bootstrap/deps/vue/src/compiler.js");
+require.alias("yyx990803-vue/src/viewmodel.js", "vue-custom-component-bootstrap/deps/vue/src/viewmodel.js");
+require.alias("yyx990803-vue/src/binding.js", "vue-custom-component-bootstrap/deps/vue/src/binding.js");
+require.alias("yyx990803-vue/src/observer.js", "vue-custom-component-bootstrap/deps/vue/src/observer.js");
+require.alias("yyx990803-vue/src/directive.js", "vue-custom-component-bootstrap/deps/vue/src/directive.js");
+require.alias("yyx990803-vue/src/exp-parser.js", "vue-custom-component-bootstrap/deps/vue/src/exp-parser.js");
+require.alias("yyx990803-vue/src/text-parser.js", "vue-custom-component-bootstrap/deps/vue/src/text-parser.js");
+require.alias("yyx990803-vue/src/deps-parser.js", "vue-custom-component-bootstrap/deps/vue/src/deps-parser.js");
+require.alias("yyx990803-vue/src/filters.js", "vue-custom-component-bootstrap/deps/vue/src/filters.js");
+require.alias("yyx990803-vue/src/transition.js", "vue-custom-component-bootstrap/deps/vue/src/transition.js");
+require.alias("yyx990803-vue/src/batcher.js", "vue-custom-component-bootstrap/deps/vue/src/batcher.js");
+require.alias("yyx990803-vue/src/directives/index.js", "vue-custom-component-bootstrap/deps/vue/src/directives/index.js");
+require.alias("yyx990803-vue/src/directives/if.js", "vue-custom-component-bootstrap/deps/vue/src/directives/if.js");
+require.alias("yyx990803-vue/src/directives/repeat.js", "vue-custom-component-bootstrap/deps/vue/src/directives/repeat.js");
+require.alias("yyx990803-vue/src/directives/on.js", "vue-custom-component-bootstrap/deps/vue/src/directives/on.js");
+require.alias("yyx990803-vue/src/directives/model.js", "vue-custom-component-bootstrap/deps/vue/src/directives/model.js");
+require.alias("yyx990803-vue/src/directives/with.js", "vue-custom-component-bootstrap/deps/vue/src/directives/with.js");
+require.alias("yyx990803-vue/src/directives/html.js", "vue-custom-component-bootstrap/deps/vue/src/directives/html.js");
+require.alias("yyx990803-vue/src/directives/style.js", "vue-custom-component-bootstrap/deps/vue/src/directives/style.js");
+require.alias("yyx990803-vue/src/directives/partial.js", "vue-custom-component-bootstrap/deps/vue/src/directives/partial.js");
+require.alias("yyx990803-vue/src/directives/view.js", "vue-custom-component-bootstrap/deps/vue/src/directives/view.js");
+require.alias("yyx990803-vue/src/main.js", "vue-custom-component-bootstrap/deps/vue/index.js");
 require.alias("yyx990803-vue/src/main.js", "vue/index.js");
 require.alias("yyx990803-vue/src/main.js", "yyx990803-vue/index.js");
-require.alias("navbar/index.js", "vue-component-example/deps/navbar/index.js");
+require.alias("navbar/index.js", "vue-custom-component-bootstrap/deps/navbar/index.js");
 require.alias("navbar/index.js", "navbar/index.js");
 
-require.alias("main/index.js", "vue-component-example/deps/main/index.js");
+require.alias("main/index.js", "vue-custom-component-bootstrap/deps/main/index.js");
 require.alias("main/index.js", "main/index.js");
 
-require.alias("footer/index.js", "vue-component-example/deps/footer/index.js");
+require.alias("footer/index.js", "vue-custom-component-bootstrap/deps/footer/index.js");
 require.alias("footer/index.js", "footer/index.js");
 
-require.alias("vue-component-example/src/main.js", "vue-component-example/index.js");
+require.alias("vue-custom-component-bootstrap/src/main.js", "vue-custom-component-bootstrap/index.js");
 if (typeof exports == 'object') {
-  module.exports = require('vue-component-example');
+  module.exports = require('vue-custom-component-bootstrap');
 } else if (typeof define == 'function' && define.amd) {
-  define(function(){ return require('vue-component-example'); });
+  define(function(){ return require('vue-custom-component-bootstrap'); });
 } else {
-  window['vue-component-example'] = require('vue-component-example');
+  window['vue-custom-component-bootstrap'] = require('vue-custom-component-bootstrap');
 }})();
